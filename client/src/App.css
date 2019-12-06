@@ -1,0 +1,50 @@
+.danhmuc-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.ui.card {
+  margin-left: 60px;
+}
+.ui.card:first-child {
+  margin-top: 15px;
+}
+.ui.card:last-child {
+  margin-bottom: 20px;
+}
+/* .showcase {
+  width: 850px;
+  background: url("img/showcase2.jpg.jpg") no-repeat center center/cover;
+  height: 40vh;
+} */
+.showcase {
+  width: 850px;
+  background: url("img/quangcao4.gif") no-repeat center center/cover;
+  height: 30vh;
+}
+.banner {
+  background: url("img/quangcao6.gif") no-repeat center center/cover;
+  height: 40vh;
+}
+.banner-footer {
+  background: url("img/quangcao5.gif") no-repeat center center/cover;
+  height: 40vh;
+}
+.banner-profile {
+  background: url("img/quancao3.jpg") no-repeat center center/cover;
+  height: 40vh;
+}
+.banner-login {
+  background: url("img/quangcao.jpg") no-repeat center center/cover;
+  height: 20vh;
+}
+.banner-register {
+  background: url("img/quangcao3.jpg") no-repeat center center/cover;
+  height: 20vh;
+}
+.homepage-title {
+  padding-left: 50px;
+  margin-top: 20px;
+  width: 100%;
+}
