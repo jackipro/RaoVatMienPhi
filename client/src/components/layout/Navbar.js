@@ -22,7 +22,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
           </Link>
           <div className="or"></div>
           <Link to="/createprofile" className="ui inverted primary button">
-            <i class="user circle icon"></i>
+            <i class="user plus icon"></i>
             Tạo thông tin hoặc cập nhật
           </Link>
         </div>

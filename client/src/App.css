@@ -19,9 +19,9 @@
   height: 40vh;
 } */
 .showcase {
-  width: 850px;
   background: url("img/quangcao4.gif") no-repeat center center/cover;
   height: 30vh;
+  margin-top: 30px;
 }
 .banner {
   background: url("img/quangcao6.gif") no-repeat center center/cover;
