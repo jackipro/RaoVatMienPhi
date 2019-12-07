@@ -21,9 +21,9 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
             Thông tin cá nhân
           </Link>
           <div className="or"></div>
-          <Link to="/createprofile" className="ui inverted primary button">
+          <Link to="/createprofile" className="ui primary button">
             <i className="user plus icon"></i>
-            Tạo thông tin hoặc cập nhật
+            Cập nhật thông tin cá nhân
           </Link>
         </div>
       </div>

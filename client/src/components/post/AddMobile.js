@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { withRouter } from "react-router-dom";
+import { withRouter, Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { createPost } from "../../actions/post";
 
@@ -25,6 +25,7 @@ const AddMobile = ({ createPost }) => {
     <div>
       <div className="banner-profile"></div>
       <h1 className="ui header">Đăng bài danh mục Điện Thoại </h1>
+
       <form onSubmit={e => onSubmit(e)} className="ui form">
         <div className="unstackable two fields">
           <div className="field">

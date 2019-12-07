@@ -65,6 +65,7 @@ const Footer = () => {
           <div className="seven wide column">
             <h4 className="ui inverted header">Rao Vặt Miễn Phí</h4>
             <p>Hãy chọn đối tác cho bạn với những món đồ giá rẻ nhất nhé !</p>
+            <p>Bản quyền thuộc Solo Team ❤️</p>
           </div>
         </div>
         <div className="ui inverted section divider"></div>
