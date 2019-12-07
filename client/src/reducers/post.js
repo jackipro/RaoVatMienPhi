@@ -1,8 +1,8 @@
 import { GET_POST, POST_ERROR } from "../actions/types";
 
 const initialState = {
-  post: null,
   posts: [],
+  post: null,
   loading: true,
   error: {}
 };
@@ -12,7 +12,7 @@ export default function(state = initialState, action) {
     case GET_POST:
       return {
         ...state,
-        post: payload,
+        posts: payload,
         loading: false
       };
     case POST_ERROR:

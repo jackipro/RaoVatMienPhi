@@ -5,14 +5,18 @@ import { GET_POST, POST_ERROR } from "../actions/types";
 
 //Get post
 
-// export const getPost = () => async dispatch => {
-//   try {
-//     const res = await axios.get("http://localhost:5000/api/posts/");
-//   } catch (err) {
-//     dispatch(setAlert("Lỗi", "warning"));
-//     console.log("Lỗi không xác định");
-//   }
-// };
+export const getPost = () => async dispatch => {
+  try {
+    const res = await axios.get("http://localhost:5000/api/posts/");
+    dispatch({
+      type: GET_POST,
+      payload: res.data
+    });
+  } catch (err) {
+    dispatch(setAlert("Không load được bài viết", "warning"));
+    console.log("Lỗi không xác định");
+  }
+};
 // Create post
 export const createPost = (formData, edit = false) => async dispatch => {
   try {

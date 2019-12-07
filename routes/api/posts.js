@@ -58,7 +58,7 @@ router.post(
 //NOTE  GET all post
 // @route   Get api/posts
 // @desc    Get all post
-// @access  Private
+// @access  Public
 router.get("/", async (req, res) => {
   try {
     const posts = await Post.find().sort({ date: -1 });
