@@ -6,29 +6,24 @@ import Job from "../../img/job.jpg";
 import Dog from "../../img/dog.jpg";
 import Service from "../../img/service.png";
 import Fashion from "../../img/fashion.jpg";
-export default function Homepage() {
+const AddPost = () => {
   return (
     <div>
       <div className="ui two column centered">
         <div className="column ">
-          <div className="banner-footer"></div>
+          <div className="banner-login"></div>
 
           <div className="homepage-title">
-            <h1>Chào mừng đến với Đăng tin rao vặt miễn phí</h1>
-            <p>
-              Hãy kết nối và trao đổi những món đồ cũ cùng với mọi người hoặc
-              bán nó với giá rẻ.
-            </p>
-            <h1>Khám phá các danh mục</h1>
+            <h1>Bạn muốn đăng bài theo danh mục nào ? </h1>
           </div>
 
           <div className="danhmuc-box">
             <div className="ui card">
-              <Link to="/mobile" className="image" href="#!">
+              <Link to="/add-mobile" className="image" href="#!">
                 <img src={Phone} alt="/" />
               </Link>
               <div className="content">
-                <Link to="/mobile" className="header" href="#!">
+                <Link to="/add-mobile" className="header" href="#!">
                   Điện Thoại
                 </Link>
                 <div class="meta">
@@ -103,7 +98,7 @@ export default function Homepage() {
             </div>
           </div>
         </div>
-        <div className="banner-login"></div>
+
         <div className="four column centered row">
           <div className="column"></div>
           <div className="column"></div>
@@ -111,4 +106,5 @@ export default function Homepage() {
       </div>
     </div>
   );
-}
+};
+export default AddPost;

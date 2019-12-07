@@ -10,6 +10,24 @@ const PostSchema = new Schema({
     type: String,
     required: true
   },
+  img: {
+    type: String
+  },
+  price: {
+    type: String
+  },
+  phone: {
+    type: String,
+    required: true
+  },
+  address: {
+    type: String,
+    required: true
+  },
+  description: {
+    type: String,
+    required: true
+  },
   name: {
     type: String
   },

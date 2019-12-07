@@ -1,12 +1,11 @@
 import React, { useState, Fragment, useEffect } from "react";
-import { Link, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
-import { createProfile, getCurrentProfile } from "../../actions/profile";
+import { getCurrentProfile } from "../../actions/profile";
 const Infomation = ({
   profile: { profile, loading },
-  createProfile,
-  getCurrentProfile,
-  history
+
+  getCurrentProfile
 }) => {
   const [formData, setFormData] = useState({
     website: "",
@@ -30,13 +29,13 @@ const Infomation = ({
     instagram,
     linkedin
   } = formData;
-  const onChange = e =>
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  // const onChange = e =>
+  //   setFormData({ ...formData, [e.target.name]: e.target.value });
 
-  const onSubmit = e => {
-    e.preventDefault();
-    createProfile(formData, history, true);
-  };
+  // const onSubmit = e => {
+  //   e.preventDefault();
+  //   createProfile(formData, history, true);
+  // };
 
   useEffect(() => {
     getCurrentProfile();
@@ -55,7 +54,7 @@ const Infomation = ({
 
   return (
     <Fragment>
-      <form className="ui form" onSubmit={e => onSubmit(e)}>
+      <form className="ui form">
         <div className="unstackable two fields">
           <div className="field">
             <label>Website cá nhân</label>
@@ -142,6 +141,6 @@ const Infomation = ({
 const mapStateToProps = state => ({
   profile: state.profile
 });
-export default connect(mapStateToProps, { createProfile, getCurrentProfile })(
+export default connect(mapStateToProps, { getCurrentProfile })(
   withRouter(Infomation)
 );

@@ -17,23 +17,19 @@ const Dashboard = ({
     <Spinner />
   ) : (
     <Fragment>
-      <div className="banner-login"></div>
       <h1 className=" ui header">Thông tin cá nhân</h1>
-      <h2 class="ui header">
-        <img src={user.avatar} class="ui circular image" />
+      <h2 className="ui header">
+        <img src={user.avatar} className="ui circular image" />
         Xin chào {user && user.name}
       </h2>
-
       {profile !== null ? (
         <Fragment></Fragment>
       ) : (
         <Fragment>Bạn chưa có thông tin cá nhân</Fragment>
       )}
-
       <Infomation />
       <DashboardAction />
-
-      <div className="showcase"></div>
+      <div className="banner-login"></div>
     </Fragment>
   );
 };

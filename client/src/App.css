@@ -11,8 +11,9 @@
   margin-top: 15px;
 }
 .ui.card:last-child {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
+
 /* .showcase {
   width: 850px;
   background: url("img/showcase2.jpg.jpg") no-repeat center center/cover;
@@ -37,11 +38,18 @@
 }
 .banner-login {
   background: url("img/quangcao.jpg") no-repeat center center/cover;
-  height: 20vh;
+  height: 45vh;
 }
 .banner-register {
   background: url("img/quangcao3.jpg") no-repeat center center/cover;
   height: 20vh;
+}
+.banner-about {
+  background: url("img/member.gif") no-repeat center center/cover;
+  height: 30vh;
+}
+.box-about {
+  display: flex;
 }
 .homepage-title {
   padding-left: 50px;

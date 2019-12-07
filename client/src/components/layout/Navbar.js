@@ -8,8 +8,8 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     <div className="right menu">
       <div className="item">
         <div className="ui tiny buttons">
-          <Link to="/" className="ui inverted  button">
-            <i class="arrows plus icon"></i>
+          <Link to="/addpost" className="ui  black  button">
+            <i className="arrows plus icon"></i>
             Đăng bài
           </Link>
         </div>
@@ -17,12 +17,12 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
       <div className="item">
         <div className="ui tiny buttons">
           <Link to="/dashboard" className="ui inverted primary button">
-            <i class="user circle icon"></i>
+            <i className="user circle icon"></i>
             Thông tin cá nhân
           </Link>
           <div className="or"></div>
           <Link to="/createprofile" className="ui inverted primary button">
-            <i class="user plus icon"></i>
+            <i className="user plus icon"></i>
             Tạo thông tin hoặc cập nhật
           </Link>
         </div>
@@ -31,7 +31,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
       <div className="item">
         <div className="ui tiny buttons">
           <a onClick={logout} className="ui  inverted red  button">
-            <i class="arrows sign-out icon"></i>
+            <i className="arrows sign-out icon"></i>
             Đăng xuất
           </a>
         </div>
@@ -42,13 +42,13 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     <div className="right menu">
       <div className="item">
         <div className="ui tiny buttons">
-          <Link to="/register" className="ui inverted button">
-            <i class="arrows user icon"></i>
+          <Link to="/register" className="ui black basic button">
+            <i className="arrows user icon"></i>
             Đăng Ký
           </Link>
           <div className="or"></div>
           <Link to="/login" className="ui inverted yellow  button">
-            <i class="arrows sign-in icon"></i>
+            <i className="arrows sign-in icon"></i>
             Đăng Nhập
           </Link>
         </div>
@@ -56,7 +56,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     </div>
   );
   return (
-    <div className="ui small inverted menu  ">
+    <div className="ui small   menu  ">
       <div className="item">
         <img src={Logo} alt="/" />
       </div>
@@ -67,9 +67,9 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
       <Link to="/tos" className="item">
         Điều khoản sử dụng
       </Link>
-      <a className="item" href="#!">
+      <Link className="item" to="/about">
         Giới Thiệu
-      </a>
+      </Link>
       {!loading && (
         <Fragment>{isAuthenticated ? authLink : guestLink}</Fragment>
       )}

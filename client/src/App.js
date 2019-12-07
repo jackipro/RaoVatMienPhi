@@ -12,6 +12,10 @@ import Dashboard from "./components/dashboard/Dashboard";
 import PrivateRoute from "./components/routing/PrivateRoute";
 import CreateProfile from "./components/profile-form/CreateProfile";
 import EditProfile from "./components/profile-form/EditProfile";
+import About from "./components/pages/About";
+import Mobile from "./components/pages/Mobile";
+import AddPost from "./components/post/AddPost";
+import AddMobile from "./components/post/AddMobile";
 //Redux
 import { Provider } from "react-redux";
 import { loadUser } from "./actions/auth";
@@ -30,13 +34,15 @@ const App = () => {
       <Router>
         <Fragment>
           <Navbar />
-          <div class="ui justified container">
+          <div className="ui justified container">
             <Alert />
             <Switch>
               <Route exact path="/" component={Homepage} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/register" component={Register} />
               <Route exact path="/tos" component={Tos} />
+              <Route exact path="/about" component={About} />
+              <Route exact path="/mobile" component={Mobile} />
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
               <PrivateRoute
                 exact
@@ -48,6 +54,8 @@ const App = () => {
                 path="/createprofile"
                 component={CreateProfile}
               />
+              <PrivateRoute exact path="/addpost" component={AddPost} />
+              <PrivateRoute exact path="/add-mobile" component={AddMobile} />
             </Switch>
           </div>
           <Footer />

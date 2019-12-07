@@ -17,6 +17,15 @@ router.post(
     [
       check("text", "text is required")
         .not()
+        .isEmpty(),
+      check("phone", "Phone is required")
+        .not()
+        .isEmpty(),
+      check("address", "Address is required")
+        .not()
+        .isEmpty(),
+      check("description", "Description is required")
+        .not()
         .isEmpty()
     ]
   ],
@@ -29,6 +38,11 @@ router.post(
       const user = await User.findById(req.user.id).select("-password");
       const newPost = new Post({
         text: req.body.text,
+        img: req.body.img,
+        price: req.body.price,
+        phone: req.body.phone,
+        address: req.body.address,
+        description: req.body.description,
         name: user.name,
         avatar: user.avatar,
         user: req.user.id
@@ -45,7 +59,7 @@ router.post(
 // @route   Get api/posts
 // @desc    Get all post
 // @access  Private
-router.get("/", auth, async (req, res) => {
+router.get("/", async (req, res) => {
   try {
     const posts = await Post.find().sort({ date: -1 });
     res.json(posts);
@@ -57,8 +71,8 @@ router.get("/", auth, async (req, res) => {
 //NOTE  get post by id
 // @route   Get api/posts/:id
 // @desc    Get all post by id
-// @access  Private
-router.get("/:id", auth, async (req, res) => {
+// @access  Public
+router.get("/:id", async (req, res) => {
   try {
     const post = await Post.findById(req.params.id);
     if (!post) {
