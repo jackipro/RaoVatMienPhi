@@ -21,26 +21,39 @@ const MobileItem = ({
 }) => {
   return (
     <Fragment>
-      <div class="event">
-        <div class="label">
-          <img src={avatar} />
-        </div>
-        <div class="content">
-          <div class="date">4 ngày trước</div>
-          <div class="summary">{text}</div>
-          <div class="summary">Đăng bởi: {name}</div>
-          <div class="text extra">Điện thoại cũ giá rẻ, mới 90%</div>
-          <div class="text extra">
-            <i class="money bill alternate outline icon"></i>
-            Giá bán: 3000000
+      <div class="ui feed">
+        <div class="event">
+          <div class="label">
+            <img src={avatar} />
           </div>
-          <div class="images extra">
-            <img src={img} />
-          </div>
-          <div class="meta">
-            <a class="like">
-              <i aria-hidden="true" class="like icon"></i>4 Likes
-            </a>
+          <div class="content">
+            <div class="date">
+              <i class="calendar alternate outline icon"></i>
+              Đăng vào: <Moment format="DD/MM/YYYY">{date}</Moment>
+            </div>
+            <div class="summary">
+              <i class="bookmark icon"></i>
+              {text}
+            </div>
+            <div class="text">
+              <i class="user circle icon"></i> Đăng bởi: <a> {name}</a>
+            </div>
+            <div class="text extra">
+              <i class="bullhorn icon"></i>Mô tả: {description}
+            </div>
+            <div class="text extra">
+              <i class="money bill alternate outline icon"></i>
+              Giá bán: {price} VND
+            </div>
+            <div class="images extra">
+              <img src={img} />
+            </div>
+            <div class="meta">
+              <a class="like">
+                <i aria-hidden="true" class="like icon"></i>
+                {likes} Likes
+              </a>
+            </div>
           </div>
         </div>
       </div>

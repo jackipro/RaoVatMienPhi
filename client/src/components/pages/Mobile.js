@@ -13,7 +13,7 @@ const Mobile = ({ getPost, post: { posts, loading } }) => {
     <Fragment>
       <h1 className="ui header">Các bài đăng mới nhất danh mục điện thoại</h1>
 
-      <div class="ui feed">
+      <div>
         {posts.map(post => (
           <MobileItem key={post._id} post={post} />
         ))}

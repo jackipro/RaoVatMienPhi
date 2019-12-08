@@ -75,3 +75,6 @@
 .overlay.fixed .menu {
   left: 800px;
 }
+.feed {
+  text-align: center;
+}
