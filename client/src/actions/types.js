@@ -11,4 +11,6 @@ export const GET_PROFILE = "GET_PROFILE";
 export const CLEAR_PROFILE = "CLEAR_PROFILE";
 export const PROFILE_ERROR = "PROFILE_ERROR";
 export const GET_POST = "GET_POST";
+export const GET_SINGLEPOST = "GET_SINGLEPOST";
 export const POST_ERROR = "POST_ERROR";
+export const UPDATE_LIKES = "UPDATE_LIKES";

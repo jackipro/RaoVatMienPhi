@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { withRouter, Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { createPost } from "../../actions/post";
+import NumberFormat from "react-number-format";
+import FileBase64 from "react-file-base64";
 
 const AddMobile = ({ createPost }) => {
   const [formData, setFormData] = useState({
@@ -13,7 +15,7 @@ const AddMobile = ({ createPost }) => {
     description: ""
   });
   const { text, img, price, phone, address, description } = formData;
-
+  const encodedString = new Buffer(`${img}`).toString("base64");
   const onChange = e =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
   const onSubmit = e => {
@@ -24,8 +26,7 @@ const AddMobile = ({ createPost }) => {
   return (
     <div>
       <div className="banner-profile"></div>
-      <h1 className="ui header">Đăng bài danh mục Điện Thoại </h1>
-
+      <h1 className="ui header">Điện thoại giá rẻ </h1>
       <form onSubmit={e => onSubmit(e)} className="ui form">
         <div className="unstackable two fields">
           <div className="field">
@@ -51,8 +52,7 @@ const AddMobile = ({ createPost }) => {
                 value={img}
                 name="img"
                 onChange={e => onChange(e)}
-                type="text"
-                placeholder="Copy URL hình ảnh"
+                type="file"
               />
             </div>
           </div>
@@ -93,12 +93,13 @@ const AddMobile = ({ createPost }) => {
               <i class="dollar sign icon"></i> Giá tiền bạn muốn bán
             </label>
             <div className="ui input">
-              <input
+              <NumberFormat
+                thousandSeparator={true}
                 value={price}
                 name="price"
                 onChange={e => onChange(e)}
-                type="text"
                 placeholder="Giá tiền"
+                prefix={"$"}
               />
             </div>
           </div>
@@ -119,8 +120,11 @@ const AddMobile = ({ createPost }) => {
         </div>
 
         <button type="submit" className="ui button">
-          Submit
+          Đăng bài
         </button>
+        <Link to="/mobile" class="ui primary basic button">
+          Chuyển đến trang rao vặt điện thoại
+        </Link>
       </form>
     </div>
   );

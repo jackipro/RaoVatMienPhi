@@ -25,12 +25,24 @@ const About = () => {
               và không ngại khó khăn, mặc dù là dân dev nhưng không thể thiếu âm
               nhạc và tôi thích ca hát và không thể sống thiếu âm nhạc
             </div>
-          </div>
-          <div className="extra content">
             <a href="!#">
               <i aria-hidden="true" className="user icon"></i>
               Backend Dev
             </a>
+          </div>
+          <div className="extra content">
+            <button className="ui circular facebook icon button ">
+              <i class="facebook icon"></i>
+            </button>
+            <button className="ui circular twitter icon button ">
+              <i class="twitter icon"></i>
+            </button>
+            <button className="ui circular linkedin icon button ">
+              <i className="linkedin icon"></i>
+            </button>
+            <button className="ui circular google plus icon button ">
+              <i className="google plus icon"></i>
+            </button>
           </div>
         </div>
         <div className="ui card">
@@ -50,12 +62,25 @@ const About = () => {
               đơn giản để giải quyết nó, hãy giải quyết vấn đề một cách đơn giản
               nhất có thể.
             </div>
-          </div>
-          <div className="extra content">
+
             <a href="!#">
               <i aria-hidden="true" className="user icon"></i>
               Front-end Dev
             </a>
+          </div>
+          <div className="extra content">
+            <button className="ui circular facebook icon button">
+              <i className="facebook icon"></i>
+            </button>
+            <button className="ui circular twitter icon button">
+              <i className="twitter icon"></i>
+            </button>
+            <button className="ui circular linkedin icon button">
+              <i className="linkedin icon"></i>
+            </button>
+            <button className="ui circular google plus icon button">
+              <i className="google plus icon"></i>
+            </button>
           </div>
         </div>
         <div className="ui card">
@@ -75,12 +100,25 @@ const About = () => {
               học những cái mới mẻ hơn, tôi thích vi vu đây đó để cảm nhận sự
               thanh bình của cuộc sống
             </div>
-          </div>
-          <div className="extra content">
+
             <a href="!#">
               <i aria-hidden="true" className="user icon"></i>
               Backend Dev
             </a>
+          </div>
+          <div className="extra content">
+            <button className="ui circular facebook icon button">
+              <i className="facebook icon"></i>
+            </button>
+            <button className="ui circular twitter icon button">
+              <i className="twitter icon"></i>
+            </button>
+            <button className="ui circular linkedin icon button">
+              <i className="linkedin icon"></i>
+            </button>
+            <button className="ui circular google plus icon button">
+              <i className="google plus icon"></i>
+            </button>
           </div>
         </div>
       </div>

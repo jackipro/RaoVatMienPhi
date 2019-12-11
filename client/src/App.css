@@ -3,9 +3,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
+
+  justify-content: space-around;
 }
 .ui.card {
-  margin-left: 60px;
+  margin-left: 20px;
 }
 .ui.card:first-child {
   margin-top: 15px;
@@ -48,8 +50,13 @@
   background: url("img/member.gif") no-repeat center center/cover;
   height: 30vh;
 }
+.mobile-banner {
+  background: url("img/mobile.jpg") no-repeat center center/cover;
+  height: 50vh;
+}
 .box-about {
   display: flex;
+  margin-bottom: 30px;
 }
 .homepage-title {
   padding-left: 50px;
@@ -77,4 +84,21 @@
 }
 .feed {
   text-align: center;
+}
+/* .ui.button {
+  margin: 0 0.25em 0 20px;
+} */
+
+.banner-doc {
+  background: url("img/bannerdoc.jpg") no-repeat center center/cover;
+  height: 100vh;
+}
+.banner-doc2 {
+  background: url("img/bannerdoc2.jpg") no-repeat center center/cover;
+  height: 100vh;
+}
+.ui.feed {
+  border: 1px solid #22242626;
+  padding: 20px 10px;
+  border-radius: 3px;
 }

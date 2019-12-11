@@ -1,7 +1,12 @@
 import axios from "axios";
 import { setAlert } from "./alert";
 
-import { GET_POST, POST_ERROR } from "../actions/types";
+import {
+  GET_POST,
+  POST_ERROR,
+  UPDATE_LIKES,
+  GET_SINGLEPOST
+} from "../actions/types";
 
 //Get post
 
@@ -14,6 +19,46 @@ export const getPost = () => async dispatch => {
     });
   } catch (err) {
     dispatch(setAlert("Không load được bài viết", "warning"));
+    console.log("Lỗi không xác định");
+  }
+};
+//Get id post
+
+export const getSinglePost = id => async dispatch => {
+  try {
+    const res = await axios.get(`http://localhost:5000/api/posts/${id}`);
+    dispatch({
+      type: GET_SINGLEPOST,
+      payload: res.data
+    });
+  } catch (err) {
+    dispatch(setAlert("Không load được bài viết", "warning"));
+    console.log("Lỗi không xác định");
+  }
+};
+//ADD likes
+export const addLike = id => async dispatch => {
+  try {
+    const res = await axios.put(`http://localhost:5000/api/posts/${id}`);
+    dispatch({
+      type: UPDATE_LIKES,
+      payload: { id, likes: res.data }
+    });
+  } catch (err) {
+    dispatch(setAlert("Lỗi", "warning"));
+    console.log("Lỗi không xác định");
+  }
+};
+//romove likes
+export const removeLike = id => async dispatch => {
+  try {
+    const res = await axios.put(`http://localhost:5000/api/posts/unlike/${id}`);
+    dispatch({
+      type: UPDATE_LIKES,
+      payload: { id, likes: res.data }
+    });
+  } catch (err) {
+    dispatch(setAlert("Lỗi", "warning"));
     console.log("Lỗi không xác định");
   }
 };

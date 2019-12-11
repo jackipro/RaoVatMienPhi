@@ -36,6 +36,7 @@ router.post(
     }
     try {
       const user = await User.findById(req.user.id).select("-password");
+
       const newPost = new Post({
         text: req.body.text,
         img: req.body.img,
@@ -59,7 +60,7 @@ router.post(
 // @route   Get api/posts
 // @desc    Get all post
 // @access  Public
-router.get("/", async (req, res) => {
+router.get("/", auth, async (req, res) => {
   try {
     const posts = await Post.find().sort({ date: -1 });
     res.json(posts);
@@ -72,7 +73,7 @@ router.get("/", async (req, res) => {
 // @route   Get api/posts/:id
 // @desc    Get all post by id
 // @access  Public
-router.get("/:id", async (req, res) => {
+router.get("/:id", auth, async (req, res) => {
   try {
     const post = await Post.findById(req.params.id);
     if (!post) {

@@ -16,6 +16,7 @@ import About from "./components/pages/About";
 import Mobile from "./components/pages/Mobile";
 import AddPost from "./components/post/AddPost";
 import AddMobile from "./components/post/AddMobile";
+import Detail from "./components/pages/Detail";
 //Redux
 import { Provider } from "react-redux";
 import { loadUser } from "./actions/auth";
@@ -42,7 +43,8 @@ const App = () => {
               <Route exact path="/register" component={Register} />
               <Route exact path="/tos" component={Tos} />
               <Route exact path="/about" component={About} />
-              <Route exact path="/mobile" component={Mobile} />
+              <PrivateRoute exact path="/mobile" component={Mobile} />
+              <PrivateRoute exact path="/mobile/:id" component={Detail} />
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
               <PrivateRoute
                 exact
