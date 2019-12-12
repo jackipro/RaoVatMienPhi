@@ -26,15 +26,22 @@ const MobileSingleItem = ({
     price,
     phone,
     address,
-    description
+    description,
+    social
   }
 }) => {
   return (
     <Fragment>
-      <Grid columns={2} padded="horizontally">
-        <Grid.Column>
+      <Grid>
+        <Grid.Column width={4}>
+          <div className="mobile_single-banner"></div>
+        </Grid.Column>
+        <Grid.Column width={8}>
           <h1 class="ui header">Chi tiết bài viết</h1>
-
+          <Link to="/mobile" class="ui secondary button">
+            <i class="arrow alternate circle left icon"></i>
+            Trở lại
+          </Link>
           <div class="ui items">
             <div class="item">
               <a class="ui tiny image">
@@ -90,6 +97,7 @@ const MobileSingleItem = ({
           <div class="description">
             <p>{description}</p>
           </div>
+
           <div class="ui divider"></div>
           <h3 style={{ margin: "10px 0px", fontWeight: "bold" }}>
             <i class="mobile alternate icon"></i>
@@ -97,17 +105,24 @@ const MobileSingleItem = ({
           </h3>
           <div class="ui divider"></div>
           <h3 style={{ margin: "10px 0px", fontWeight: "bold" }}>
+            <i class="facebook messenger icon"></i>
+            Liên hệ với người này qua:{" "}
+            <a href={social} class="ui circular facebook icon button">
+              <i class="facebook icon"></i>
+            </a>
+          </h3>
+          <div class="ui divider"></div>
+          <h3 style={{ margin: "10px 0px", fontWeight: "bold" }}>
             <i class="map marker icon"></i>
             Khu vực: <a class="ui teal tag label">{address}</a>
           </h3>
-        </Grid.Column>
-        <Grid.Column>
           <div class="ui divider"></div>
           <Image src={img} />
         </Grid.Column>
+        <Grid.Column width={4}>
+          <div className="banner-doc"></div>
+        </Grid.Column>
       </Grid>
-      <div class="ui divider"></div>
-      <h1>Chuyển đến các danh mục khác</h1>
     </Fragment>
   );
 };

@@ -5,6 +5,7 @@ const auth = require("../../middleware/auth");
 const Post = require("../../models/Post");
 const Profile = require("../../models/Profile");
 const User = require("../../models/User");
+var multer = require("multer");
 
 // NOTE  Create a post
 // @route   Get api/posts
@@ -29,6 +30,7 @@ router.post(
         .isEmpty()
     ]
   ],
+
   async (req, res) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
@@ -36,9 +38,9 @@ router.post(
     }
     try {
       const user = await User.findById(req.user.id).select("-password");
-
       const newPost = new Post({
         text: req.body.text,
+        social: req.body.social,
         img: req.body.img,
         price: req.body.price,
         phone: req.body.phone,

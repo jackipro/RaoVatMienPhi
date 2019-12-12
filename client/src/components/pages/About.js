@@ -31,18 +31,20 @@ const About = () => {
             </a>
           </div>
           <div className="extra content">
-            <button className="ui circular facebook icon button ">
-              <i class="facebook icon"></i>
-            </button>
-            <button className="ui circular twitter icon button ">
-              <i class="twitter icon"></i>
-            </button>
-            <button className="ui circular linkedin icon button ">
-              <i className="linkedin icon"></i>
-            </button>
-            <button className="ui circular google plus icon button ">
-              <i className="google plus icon"></i>
-            </button>
+            <div className="box-about">
+              <button className="ui circular facebook icon button ">
+                <i class="facebook icon"></i>
+              </button>
+              <button className="ui circular twitter icon button ">
+                <i class="twitter icon"></i>
+              </button>
+              <button className="ui circular linkedin icon button ">
+                <i className="linkedin icon"></i>
+              </button>
+              <button className="ui circular google plus icon button ">
+                <i className="google plus icon"></i>
+              </button>
+            </div>
           </div>
         </div>
         <div className="ui card">
@@ -69,18 +71,20 @@ const About = () => {
             </a>
           </div>
           <div className="extra content">
-            <button className="ui circular facebook icon button">
-              <i className="facebook icon"></i>
-            </button>
-            <button className="ui circular twitter icon button">
-              <i className="twitter icon"></i>
-            </button>
-            <button className="ui circular linkedin icon button">
-              <i className="linkedin icon"></i>
-            </button>
-            <button className="ui circular google plus icon button">
-              <i className="google plus icon"></i>
-            </button>
+            <div className="box-about">
+              <button className="ui circular facebook icon button ">
+                <i class="facebook icon"></i>
+              </button>
+              <button className="ui circular twitter icon button ">
+                <i class="twitter icon"></i>
+              </button>
+              <button className="ui circular linkedin icon button ">
+                <i className="linkedin icon"></i>
+              </button>
+              <button className="ui circular google plus icon button ">
+                <i className="google plus icon"></i>
+              </button>
+            </div>
           </div>
         </div>
         <div className="ui card">
@@ -107,18 +111,20 @@ const About = () => {
             </a>
           </div>
           <div className="extra content">
-            <button className="ui circular facebook icon button">
-              <i className="facebook icon"></i>
-            </button>
-            <button className="ui circular twitter icon button">
-              <i className="twitter icon"></i>
-            </button>
-            <button className="ui circular linkedin icon button">
-              <i className="linkedin icon"></i>
-            </button>
-            <button className="ui circular google plus icon button">
-              <i className="google plus icon"></i>
-            </button>
+            <div className="box-about">
+              <button className="ui circular facebook icon button ">
+                <i class="facebook icon"></i>
+              </button>
+              <button className="ui circular twitter icon button ">
+                <i class="twitter icon"></i>
+              </button>
+              <button className="ui circular linkedin icon button ">
+                <i className="linkedin icon"></i>
+              </button>
+              <button className="ui circular google plus icon button ">
+                <i className="google plus icon"></i>
+              </button>
+            </div>
           </div>
         </div>
       </div>

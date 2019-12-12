@@ -3,24 +3,35 @@ import { withRouter, Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { createPost } from "../../actions/post";
 import NumberFormat from "react-number-format";
-import FileBase64 from "react-file-base64";
+import ReactFileReader from "react-file-reader";
 
 const AddMobile = ({ createPost }) => {
   const [formData, setFormData] = useState({
     text: "",
-    img: "",
+    social: "",
     price: "",
     phone: "",
     address: "",
-    description: ""
+    description: "",
+    img: ""
   });
-  const { text, img, price, phone, address, description } = formData;
-  const encodedString = new Buffer(`${img}`).toString("base64");
-  const onChange = e =>
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const { text, img, price, phone, address, description, social } = formData;
+  const onChange = e => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
   const onSubmit = e => {
     e.preventDefault();
     createPost(formData);
+  };
+  const handleFiles = files => {
+    setFormData({
+      img: files.base64
+    });
+    // setFormData({...formData, e.target.img: e.target.value})
   };
 
   return (
@@ -29,6 +40,27 @@ const AddMobile = ({ createPost }) => {
       <h1 className="ui header">Điện thoại giá rẻ </h1>
       <form onSubmit={e => onSubmit(e)} className="ui form">
         <div className="unstackable two fields">
+          <div className="field">
+            <label>
+              <i class="file image icon"></i> Hình ảnh
+            </label>
+            <div className="ui input">
+              <ReactFileReader
+                fileTypes={["jpg", "png"]}
+                base64={true}
+                handleFiles={handleFiles}
+              >
+                <button type="button">Upload</button>
+              </ReactFileReader>
+              <input
+                onChange={e => onChange(e)}
+                value={img}
+                name="img"
+                handleFiles={handleFiles}
+                disabled
+              />
+            </div>
+          </div>
           <div className="field">
             <label>
               <i class="audio description icon"></i> Tiêu đề
@@ -40,19 +72,6 @@ const AddMobile = ({ createPost }) => {
                 onChange={e => onChange(e)}
                 type="text"
                 placeholder="Tiêu đề bài post"
-              />
-            </div>
-          </div>
-          <div className="field">
-            <label>
-              <i class="file image icon"></i> Hình ảnh
-            </label>
-            <div className="ui input">
-              <input
-                value={img}
-                name="img"
-                onChange={e => onChange(e)}
-                type="file"
               />
             </div>
           </div>
@@ -117,11 +136,26 @@ const AddMobile = ({ createPost }) => {
               />
             </div>
           </div>
+          <div className="field">
+            <label>
+              <i class="pencil alternate icon"></i> Link mạng xã hội để liên lạc
+            </label>
+            <div className="ui input">
+              <input
+                value={social}
+                name="social"
+                onChange={e => onChange(e)}
+                type="text"
+                placeholder="Link mạng xã hội để liên lạc"
+              />
+            </div>
+          </div>
         </div>
 
         <button type="submit" className="ui button">
           Đăng bài
         </button>
+
         <Link to="/mobile" class="ui primary basic button">
           Chuyển đến trang rao vặt điện thoại
         </Link>

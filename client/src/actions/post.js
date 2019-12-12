@@ -5,7 +5,8 @@ import {
   GET_POST,
   POST_ERROR,
   UPDATE_LIKES,
-  GET_SINGLEPOST
+  GET_SINGLEPOST,
+  DELELTE_POST
 } from "../actions/types";
 
 //Get post
@@ -85,5 +86,19 @@ export const createPost = (formData, edit = false) => async dispatch => {
     console.log(
       "Chỗ này bắt lỗi nè, không đúng định dạng hay những field yêu cầu không nhập thì từ phía server trả về message chỗ này mà chưa biết render"
     );
+  }
+};
+// Delete post
+export const deletePost = id => async dispatch => {
+  try {
+    const res = await axios.delete(`http://localhost:5000/api/posts/${id}`);
+    dispatch({
+      type: DELELTE_POST,
+      payload: { id }
+    });
+    dispatch(setAlert("Xóa bài thành công", "success"));
+  } catch (err) {
+    dispatch(setAlert("Lỗi", "warning"));
+    console.log("Lỗi không xác định");
   }
 };

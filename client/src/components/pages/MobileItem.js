@@ -2,25 +2,13 @@ import React, { Fragment } from "react";
 import { connect } from "react-redux";
 import Moment from "react-moment";
 import { Link } from "react-router-dom";
-import { addLike, removeLike } from "../../actions/post";
+import { addLike, removeLike, deletePost } from "../../actions/post";
 const MobileItem = ({
+  auth,
   addLike,
+  deletePost,
   removeLike,
-  post: {
-    _id,
-    text,
-    name,
-    avatar,
-    user,
-    likes,
-    comments,
-    date,
-    img,
-    price,
-    phone,
-    address,
-    description
-  }
+  post: { _id, text, name, user, likes, date, img, price }
 }) => {
   return (
     <Fragment>
@@ -51,6 +39,14 @@ const MobileItem = ({
             <Link to={`/mobile/${_id}`} class="ui mini primary basic button">
               Xem chi tiết
             </Link>
+            {!auth.loading && user === auth.user._id && (
+              <Link
+                onClick={e => deletePost(_id)}
+                class="ui mini red basic button"
+              >
+                Xóa bài viết
+              </Link>
+            )}
           </div>
         </div>
       </div>
@@ -58,5 +54,9 @@ const MobileItem = ({
     </Fragment>
   );
 };
-
-export default connect(null, { addLike, removeLike })(MobileItem);
+const mapStateToProps = state => ({
+  auth: state.auth
+});
+export default connect(mapStateToProps, { addLike, removeLike, deletePost })(
+  MobileItem
+);

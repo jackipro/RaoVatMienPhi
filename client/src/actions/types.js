@@ -14,3 +14,4 @@ export const GET_POST = "GET_POST";
 export const GET_SINGLEPOST = "GET_SINGLEPOST";
 export const POST_ERROR = "POST_ERROR";
 export const UPDATE_LIKES = "UPDATE_LIKES";
+export const DELELTE_POST = "DELETE_POST";

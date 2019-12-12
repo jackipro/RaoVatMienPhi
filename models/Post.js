@@ -16,6 +16,9 @@ const PostSchema = new Schema({
   price: {
     type: String
   },
+  social: {
+    type: String
+  },
   phone: {
     type: String,
     required: true

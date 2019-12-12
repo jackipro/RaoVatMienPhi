@@ -8,7 +8,7 @@ connectDB();
 
 //Init Middleware
 app.use(cors());
-app.use(bodyParser.json());
+app.use(bodyParser.json({ limit: "10000kb", extended: true }));
 app.use(express.json({ extended: false }));
 
 //Set Path
