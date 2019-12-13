@@ -13,7 +13,7 @@ import {
 
 export const getPost = () => async dispatch => {
   try {
-    const res = await axios.get("http://localhost:5000/api/posts/");
+    const res = await axios.get("/api/posts/");
     dispatch({
       type: GET_POST,
       payload: res.data
@@ -27,7 +27,7 @@ export const getPost = () => async dispatch => {
 
 export const getSinglePost = id => async dispatch => {
   try {
-    const res = await axios.get(`http://localhost:5000/api/posts/${id}`);
+    const res = await axios.get(`/api/posts/${id}`);
     dispatch({
       type: GET_SINGLEPOST,
       payload: res.data
@@ -40,7 +40,7 @@ export const getSinglePost = id => async dispatch => {
 //ADD likes
 export const addLike = id => async dispatch => {
   try {
-    const res = await axios.put(`http://localhost:5000/api/posts/${id}`);
+    const res = await axios.put(`/api/posts/${id}`);
     dispatch({
       type: UPDATE_LIKES,
       payload: { id, likes: res.data }
@@ -53,7 +53,7 @@ export const addLike = id => async dispatch => {
 //romove likes
 export const removeLike = id => async dispatch => {
   try {
-    const res = await axios.put(`http://localhost:5000/api/posts/unlike/${id}`);
+    const res = await axios.put(`/api/posts/unlike/${id}`);
     dispatch({
       type: UPDATE_LIKES,
       payload: { id, likes: res.data }
@@ -71,11 +71,7 @@ export const createPost = (formData, edit = false) => async dispatch => {
         "Content-Type": "application/json"
       }
     };
-    const res = await axios.post(
-      "http://localhost:5000/api/posts",
-      formData,
-      config
-    );
+    const res = await axios.post("/api/posts", formData, config);
     dispatch({
       type: GET_POST,
       payload: res.data
@@ -91,7 +87,7 @@ export const createPost = (formData, edit = false) => async dispatch => {
 // Delete post
 export const deletePost = id => async dispatch => {
   try {
-    const res = await axios.delete(`http://localhost:5000/api/posts/${id}`);
+    const res = await axios.delete(`/api/posts/${id}`);
     dispatch({
       type: DELELTE_POST,
       payload: { id }
