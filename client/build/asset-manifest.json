@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8b42bec8.chunk.css",
+    "main.js": "/static/js/main.f2a04cf8.chunk.js",
+    "main.js.map": "/static/js/main.f2a04cf8.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8095ec4f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8095ec4f.js.map",
+    "static/js/2.070481b3.chunk.js": "/static/js/2.070481b3.chunk.js",
+    "static/js/2.070481b3.chunk.js.map": "/static/js/2.070481b3.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.9439e1d6c2e98507110b793e16298986.js": "/precache-manifest.9439e1d6c2e98507110b793e16298986.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.8b42bec8.chunk.css.map": "/static/css/main.8b42bec8.chunk.css.map",
+    "static/media/App.css": "/static/media/quangcao6.e2796c2d.gif",
+    "static/media/bannerdoc3.gif": "/static/media/bannerdoc3.65d6eec0.gif",
+    "static/media/bike.jpg": "/static/media/bike.7372099d.jpg",
+    "static/media/dog.jpg": "/static/media/dog.cc67c480.jpg",
+    "static/media/fashion.jpg": "/static/media/fashion.24f30802.jpg",
+    "static/media/icon2.png": "/static/media/icon2.2e82ecf1.png",
+    "static/media/job.jpg": "/static/media/job.ae72d51b.jpg",
+    "static/media/phone.png": "/static/media/phone.d935bcf8.png",
+    "static/media/service.png": "/static/media/service.5bb99b77.png",
+    "static/media/showcase.jpg": "/static/media/showcase.4b31330b.jpg",
+    "static/media/spinner.gif": "/static/media/spinner.2c0c5093.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8095ec4f.js",
+    "static/js/2.070481b3.chunk.js",
+    "static/css/main.8b42bec8.chunk.css",
+    "static/js/main.f2a04cf8.chunk.js"
+  ]
+}
