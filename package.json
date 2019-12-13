@@ -2,12 +2,13 @@
   "name": "mernproject",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node server",
-    "server": "nodemon server",
+    "start": "node server/server.js",
+    "server": "nodemon server.js",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "",
   "license": "ISC",
@@ -42,6 +43,5 @@
   "devDependencies": {
     "concurrently": "^5.0.0",
     "nodemon": "^2.0.1"
-  },
-  "proxy": "http://localhost:5000"
+  }
 }
