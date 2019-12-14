@@ -107,7 +107,7 @@
 #slider figure img {
   width: 20%;
   float: left;
-  height: 40vh;
+  height: 60vh;
 }
 #slider figure {
   position: relative;
@@ -182,4 +182,16 @@
   background: url("img/jobgif.gif") no-repeat center center/cover;
   height: 29.5vh;
   margin-bottom: 20px;
+}
+.menu-hompage {
+  display: flex;
+  justify-content: space-around;
+}
+.banner-addmobile {
+  background: url("img/bannerdoc2.jpg") no-repeat center center/cover;
+  height: 80vh;
+}
+.banner-addmobile2 {
+  background: url("img/bannerdoc3.gif") no-repeat center center/cover;
+  height: 75vh;
 }

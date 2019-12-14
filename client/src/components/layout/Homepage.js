@@ -1,48 +1,75 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  Grid,
-  GridColumn,
-  Header,
-  Segment,
-  Input,
-  Button
-} from "semantic-ui-react";
+import { Grid, GridColumn, Input, Button } from "semantic-ui-react";
 
 import QuangCao from "../../img/quangcao12.png";
-
 import QuangCao7 from "../../img/quangcao7.png";
 import QuangCao8 from "../../img/quangcao8.jpg";
 export default function Homepage() {
   return (
     <div>
-      <div className="ui justified container">
-        <div style={{ marginBottom: "20px" }}>
-          <Segment clearing>
-            <Header as="h1" floated="left">
-              Chào mừng bạn đến với website đăng tin rao vặt miễn phí
-            </Header>
-
-            <Header as="h6" floated="right">
-              <Input icon="search" placeholder="Search..." />{" "}
-            </Header>
-            <Header as="h4" floated="left">
-              Liên hệ với chúng tôi qua:
+      <div id="slider" style={{ marginBottom: "20px" }}>
+        <figure>
+          <img src={QuangCao8} />
+          <img src={QuangCao} />
+          <img src={QuangCao7} />
+        </figure>
+      </div>
+      <div style={{ marginBottom: "20px" }}>
+        {/* <Segment clearing>
+          <Header as="h1" floated="left">
+            Chào mừng bạn đến với website đăng tin rao vặt miễn phí
+          </Header>
+          <Header as="h4" floated="left">
+           
+          </Header>
+          <Header as="h6" floated="right">
+          
+          </Header>
+        </Segment> */}
+        <div class="ui clearing segment">
+          <div className="menu-hompage">
+            <div className="trai">
+              <h2>Chào mừng bạn đến với website đăng tin rao vặt miễn phí</h2>
+              <div class="ui list">
+                <div class="item">
+                  <i class="users icon"></i>
+                  <div class="content">Cộng đồng rao vặt miễn phí</div>
+                </div>
+                <div class="item">
+                  <i class="marker icon"></i>
+                  <div class="content">Trường Đại Học Văn Lang</div>
+                </div>
+                <div class="item">
+                  <i class="mail icon"></i>
+                  <div class="content">
+                    <a href="mailto:jack@semantic-ui.com">
+                      raovatmienphi@gmail.com
+                    </a>
+                  </div>
+                </div>
+                <div class="item">
+                  <i class="linkify icon"></i>
+                  <div class="content">
+                    <a href="http://www.semantic-ui.com">
+                      raovatmienphi.herokuapp.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="phai">
+              <Input icon="search" placeholder="Search..." />
               <div style={{ marginTop: "10px" }}>
+                <h3>Liên hệ với chúng tôi qua:</h3>
+
                 <Button circular color="facebook" icon="facebook" />
                 <Button circular color="twitter" icon="twitter" />
                 <Button circular color="linkedin" icon="linkedin" />
                 <Button circular color="google plus" icon="google plus" />
               </div>
-            </Header>
-          </Segment>
-        </div>
-        <div id="slider" style={{ marginBottom: "20px" }}>
-          <figure>
-            <img src={QuangCao8} />
-            <img src={QuangCao} />
-            <img src={QuangCao7} />
-          </figure>
+            </div>
+          </div>
         </div>
       </div>
 
