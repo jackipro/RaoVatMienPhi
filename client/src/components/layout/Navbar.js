@@ -10,7 +10,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
         <div className="ui tiny buttons">
           <Link to="/addpost" className="ui  black  button">
             <i className="arrows plus icon"></i>
-            Đăng bài
+            Đăng Tin
           </Link>
         </div>
       </div>

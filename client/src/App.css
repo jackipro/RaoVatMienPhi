@@ -1,21 +1,3 @@
-.danhmuc-box {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
-
-  justify-content: space-around;
-}
-.ui.card {
-  margin-left: 20px;
-}
-.ui.card:first-child {
-  margin-top: 15px;
-}
-.ui.card:last-child {
-  margin-bottom: 15px;
-}
-
 /* .showcase {
   width: 850px;
   background: url("img/showcase2.jpg.jpg") no-repeat center center/cover;
@@ -97,7 +79,7 @@
 
 .banner-doc {
   background: url("img/bannerdoc.jpg") no-repeat center center/cover;
-  height: 100vh;
+  height: 70vh;
 }
 .banner-doc2 {
   background: url("img/bannerdoc2.jpg") no-repeat center center/cover;
@@ -107,4 +89,97 @@
   border: 1px solid #22242626;
   padding: 20px 10px;
   border-radius: 3px;
+}
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -100%;
+  }
+  100% {
+    left: -200%;
+  }
+}
+#slider {
+  overflow: hidden;
+}
+#slider figure img {
+  width: 20%;
+  float: left;
+  height: 40vh;
+}
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 10s slider infinite;
+}
+.bem {
+  margin: 20px;
+}
+.ui.card {
+  margin: 20px 0px;
+}
+.cot {
+  padding-left: 85px;
+}
+.banner-trangchu {
+  background: url("img/bannerdoc7.jpg") no-repeat center center/cover;
+  height: 75vh;
+}
+.banner-trangchu2 {
+  margin: 20px 0px;
+  background: url("img/bannerdoc3.gif") no-repeat center center/cover;
+  height: 80vh;
+}
+.banner-trangchu3 {
+  background: url("img/bannergif.gif") no-repeat center center/cover;
+  height: 30vh;
+  margin-bottom: 20px;
+}
+.banner-trangchu4 {
+  background: url("img/bannergif2.gif") no-repeat center center/cover;
+  height: 30vh;
+  margin-bottom: 20px;
+}
+.banner-trangchu5 {
+  background: url("img/bannergif3.gif") no-repeat center center/cover;
+  height: 30vh;
+}
+
+.banner-trangchu6 {
+  background: url("img/bannergif4.gif") no-repeat center center/cover;
+  height: 30vh;
+  text-align: center;
+  font-size: 30px;
+}
+.banner-trangchu7 {
+  background: url("img/bannergif5.gif") no-repeat center center/cover;
+  height: 30vh;
+}
+.mobile-gif {
+  background: url("img/mobilegif.gif") no-repeat center center/cover;
+  height: 30vh;
+  margin-bottom: 20px;
+}
+.bike-gif {
+  background: url("img/bikegif.gif") no-repeat center center/cover;
+  height: 30vh;
+}
+.fashion-gif {
+  background: url("img/fashiongif.gif") no-repeat center center/cover;
+  height: 30vh;
+  margin-bottom: 20px;
+}
+.dog-gif {
+  background: url("img/doggif.gif") no-repeat center center/cover;
+  height: 30vh;
+  margin-bottom: 20px;
+}
+.job-gif {
+  background: url("img/jobgif.gif") no-repeat center center/cover;
+  height: 29.5vh;
+  margin-bottom: 20px;
 }

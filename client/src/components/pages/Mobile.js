@@ -43,7 +43,7 @@ const Mobile = ({ getPost, post: { posts, loading } }) => {
           </Grid.Column>
 
           <Grid.Column width={4}>
-            <div className="banner-doc"></div>
+            <div className="mobile_single-banner"></div>
           </Grid.Column>
         </Grid.Row>
       </Grid>

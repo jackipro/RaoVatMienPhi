@@ -35,7 +35,7 @@ const App = () => {
       <Router>
         <Fragment>
           <Navbar />
-          <div className="ui justified container">
+          <div>
             <Alert />
             <Switch>
               <Route exact path="/" component={Homepage} />
