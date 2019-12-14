@@ -33,7 +33,7 @@
   height: 30vh;
 }
 .mobile-banner {
-  background: url("img/mobile.jpg") no-repeat center center/cover;
+  background: url("img/quangcao13.gif") no-repeat center center/cover;
   height: 50vh;
 }
 .mobile_single-banner {
@@ -83,7 +83,7 @@
 }
 .banner-doc2 {
   background: url("img/bannerdoc2.jpg") no-repeat center center/cover;
-  height: 100vh;
+  height: 80vh;
 }
 .ui.feed {
   border: 1px solid #22242626;
@@ -189,7 +189,7 @@
 }
 .banner-addmobile {
   background: url("img/bannerdoc2.jpg") no-repeat center center/cover;
-  height: 80vh;
+  height: 70vh;
 }
 .banner-addmobile2 {
   background: url("img/bannerdoc3.gif") no-repeat center center/cover;

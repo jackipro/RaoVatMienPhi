@@ -8,7 +8,7 @@ const MobileItem = ({
   addLike,
   deletePost,
   removeLike,
-  post: { _id, text, name, user, likes, date, img, price }
+  post: { _id, text, name, user, date, img, price }
 }) => {
   return (
     <Fragment>

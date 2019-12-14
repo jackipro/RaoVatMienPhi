@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import Img from "../../img/showcase.jpg";
 const Tos = () => {
   return (
     <Fragment>

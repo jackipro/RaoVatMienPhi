@@ -4,12 +4,6 @@ import Moment from "react-moment";
 import { Link } from "react-router-dom";
 import { addLike, removeLike } from "../../actions/post";
 import { Grid, Image } from "semantic-ui-react";
-import Phone from "../../img/phone.png";
-import Bike from "../../img/bike.jpg";
-import Job from "../../img/job.jpg";
-import Dog from "../../img/dog.jpg";
-import Service from "../../img/service.png";
-import Fashion from "../../img/fashion.jpg";
 const MobileSingleItem = ({
   addLike,
   removeLike,
