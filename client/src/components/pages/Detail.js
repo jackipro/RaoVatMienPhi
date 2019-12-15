@@ -13,7 +13,7 @@ const Detail = ({ getSinglePost, post: { post, loading }, match }) => {
     <Spinner />
   ) : (
     <Fragment>
-      <div className="banner-login"></div>
+      <div className="mobile_single"></div>
       <MobileSingleItem post={post} />
     </Fragment>
   );
