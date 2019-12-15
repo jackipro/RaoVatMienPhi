@@ -27,15 +27,18 @@
 }
 .banner-create-profile {
   background: url("img/createprofilegif.gif") no-repeat center center/cover;
-  height: 60vh;
+  height: 50vh;
+  margin: 0px 50px;
 }
 .banner-login {
-  background: url("img/quangcao.jpg") no-repeat center center/cover;
+  background: url("img/quangcaologin.gif") no-repeat center center/cover;
   height: 45vh;
+  margin: 0px 50px;
 }
 .banner-register {
-  background: url("img/quangcao3.jpg") no-repeat center center/cover;
-  height: 20vh;
+  background: url("img/quangcao14.gif") no-repeat center center/cover;
+  height: 40vh;
+  margin: 0px 50px;
 }
 .banner-about {
   background: url("img/member.gif") no-repeat center center/cover;
@@ -43,7 +46,12 @@
 }
 .mobile-banner {
   background: url("img/quangcao13.gif") no-repeat center center/cover;
+  height: 65vh;
+}
+.banner-infomation {
+  background: url("img/quangcao14.gif") no-repeat center center/cover;
   height: 50vh;
+  margin: 0px 50px;
 }
 .mobile_single-banner {
   background: url("img/bannerdoc8.jpg") no-repeat center center/cover;
@@ -125,6 +133,7 @@
 }
 #slider {
   overflow: hidden;
+  margin: 0px 50px;
 }
 #slider figure img {
   width: 20%;
@@ -216,4 +225,9 @@
 .banner-addmobile2 {
   background: url("img/bannerdoc3.gif") no-repeat center center/cover;
   height: 75vh;
+}
+.banner-quangcao15 {
+  background: url("img/quangcao15.gif") no-repeat center center/cover;
+  height: 50vh;
+  margin: 0px 50px;
 }

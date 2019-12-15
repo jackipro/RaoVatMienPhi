@@ -4,6 +4,7 @@ import { Grid, GridColumn } from "semantic-ui-react";
 const AddPost = () => {
   return (
     <Fragment>
+      <div className="banner-quangcao15"></div>
       <div
         className="ui justified container"
         style={{

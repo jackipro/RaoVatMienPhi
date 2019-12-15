@@ -17,6 +17,7 @@ const Dashboard = ({
     <Spinner />
   ) : (
     <Fragment>
+      <div className="banner-infomation"></div>
       <div style={{ textAlign: "center" }}>
         <Header as="h1" inverted color="yellow">
           Thông tin cá nhân
