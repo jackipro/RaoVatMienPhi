@@ -23,7 +23,7 @@ const Dashboard = ({
           Thông tin cá nhân
         </Header>
         <h2 className="ui header">
-          <img src={user.avatar} className="ui circular image" />
+          <img src={user.avatar} className="ui circular image" alt="/" />
           Xin chào {user && user.name}
         </h2>
       </div>

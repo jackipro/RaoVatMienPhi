@@ -1,5 +1,5 @@
 import React, { useState, Fragment, useEffect } from "react";
-import { withRouter, Link } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { getCurrentProfile } from "../../actions/profile";
 import { Grid } from "semantic-ui-react";
@@ -68,7 +68,7 @@ const Infomation = ({
                   <div className="field">
                     <label>Website cá nhân</label>
                     <div className="ui  input">
-                      <i class="globe big loading icon"></i>
+                      <i className="globe big loading icon"></i>
                       <input
                         type="text"
                         value={website}
@@ -80,7 +80,7 @@ const Infomation = ({
                   <div className="field">
                     <label>Số điện thoại</label>
                     <div className="ui  input">
-                      <i class="phone big icon"></i>
+                      <i className="phone big icon"></i>
                       <input type="text" value={phone} name="phone" disabled />
                     </div>
                   </div>
@@ -89,7 +89,7 @@ const Infomation = ({
                   <div className="field">
                     <label>Địa chỉ</label>
                     <div className="ui  input">
-                      <i class="location big loading arrow icon"></i>
+                      <i className="location big loading arrow icon"></i>
                       <input
                         type="text"
                         value={location}
@@ -101,7 +101,7 @@ const Infomation = ({
                   <div className="field">
                     <label>Giới thiệu</label>
                     <div className="ui  input">
-                      <i class="user big  outline icon"></i>
+                      <i className="user big  outline icon"></i>
                       <input type="text" value={bio} name="bio" disabled />
                     </div>
                   </div>
@@ -110,8 +110,8 @@ const Infomation = ({
                 <div className="field">
                   <label>Facebook của bạn</label>
                   <div className="ui  input">
-                    <a class="ui circular facebook icon button">
-                      <i class="facebook icon"></i>
+                    <a className="ui circular facebook icon button" href="!#">
+                      <i className="facebook icon"></i>
                     </a>
                     <input
                       type="text"
@@ -121,12 +121,12 @@ const Infomation = ({
                     />
                   </div>
                 </div>
-                <h1 classNamee="ui header">Các liên kết khác nếu có</h1>
+                <h1 className="ui header">Các liên kết khác nếu có</h1>
                 <div className="field">
                   <label>Youtube</label>
                   <div className="ui  input">
-                    <a class="ui circular youtube icon button">
-                      <i class="youtube icon"></i>
+                    <a className="ui circular youtube icon button" href="!#">
+                      <i className="youtube icon"></i>
                     </a>
                     <input
                       type="text"
@@ -139,8 +139,8 @@ const Infomation = ({
                 <div className="field">
                   <label>Twitter</label>
                   <div className="ui  input">
-                    <a class="ui circular facebook icon button">
-                      <i class="facebook icon"></i>
+                    <a className="ui circular facebook icon button" href="!#">
+                      <i className="facebook icon"></i>
                     </a>
                     <input
                       type="text"
@@ -153,8 +153,8 @@ const Infomation = ({
                 <div className="field">
                   <label>Instagram</label>
                   <div className="ui  input">
-                    <a class="ui circular instagram icon button">
-                      <i class="instagram icon"></i>
+                    <a className="ui circular instagram icon button" href="!#">
+                      <i className="instagram icon"></i>
                     </a>
                     <input
                       type="text"
@@ -167,8 +167,8 @@ const Infomation = ({
                 <div className="field">
                   <label>Linkedin</label>
                   <div className="ui  input">
-                    <a class="ui circular linkedin icon button">
-                      <i class="linkedin icon"></i>
+                    <a className="ui circular linkedin icon button" href="!#">
+                      <i className="linkedin icon"></i>
                     </a>
                     <input
                       type="text"

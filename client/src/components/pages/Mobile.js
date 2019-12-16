@@ -29,17 +29,27 @@ const Mobile = ({ getPost, post: { posts, loading } }) => {
             <Grid.Column width={3}>
               <div style={{ margin: " 10px 20px" }}>
                 <h4>Các danh mục khác</h4>
-                <div class="ui vertical menu ">
-                  <a class="item">Dịch vụ</a>
-                  <a class="item">Thú cưng</a>
-                  <a class="item">Việc làm</a>
-                  <a class="item">Thời trang</a>
-                  <a class="item">Xe cộ</a>
-                  <a class="item"></a>
-                  <div class="item">
-                    <div class="ui icon input">
+                <div className="ui vertical menu ">
+                  <a className="item" href="!#">
+                    Dịch vụ
+                  </a>
+                  <a className="item" href="!#">
+                    Thú cưng
+                  </a>
+                  <a className="item" href="!#">
+                    Việc làm
+                  </a>
+                  <a className="item" href="!#">
+                    Thời trang
+                  </a>
+                  <a className="item" href="!#">
+                    Xe cộ
+                  </a>
+                  <a className="item" href="!#"></a>
+                  <div className="item">
+                    <div className="ui icon input">
                       <input type="text" placeholder="Search mail..." />
-                      <i aria-hidden="true" class="search icon"></i>
+                      <i aria-hidden="true" className="search icon"></i>
                     </div>
                   </div>
                 </div>

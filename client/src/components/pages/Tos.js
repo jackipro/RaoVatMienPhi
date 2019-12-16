@@ -16,16 +16,16 @@ const Tos = () => {
           đại diện dưới đây sẽ được gọi là “bạn” hay “nhà quảng cáo”.
         </p>
 
-        <div class="overlay">
-          <div class="ui labeled icon vertical menu">
-            <a class="item">
-              <i class="twitter icon"></i> Tweet
+        <div className="overlay">
+          <div className="ui labeled icon vertical menu">
+            <a className="item" href="!#">
+              <i className="twitter icon"></i> Tweet
             </a>
-            <a class="item">
-              <i class="facebook icon"></i> Share
+            <a className="item" href="!#">
+              <i className="facebook icon"></i> Share
             </a>
-            <a class="item">
-              <i class="mail icon"></i> E-mail
+            <a className="item" href="!#">
+              <i className="mail icon"></i> E-mail
             </a>
           </div>
         </div>

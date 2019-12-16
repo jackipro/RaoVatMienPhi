@@ -33,10 +33,10 @@ const About = () => {
           <div className="extra content">
             <div className="box-about">
               <button className="ui circular facebook icon button ">
-                <i class="facebook icon"></i>
+                <i className="facebook icon"></i>
               </button>
               <button className="ui circular twitter icon button ">
-                <i class="twitter icon"></i>
+                <i className="twitter icon"></i>
               </button>
               <button className="ui circular linkedin icon button ">
                 <i className="linkedin icon"></i>
@@ -73,10 +73,10 @@ const About = () => {
           <div className="extra content">
             <div className="box-about">
               <button className="ui circular facebook icon button ">
-                <i class="facebook icon"></i>
+                <i className="facebook icon"></i>
               </button>
               <button className="ui circular twitter icon button ">
-                <i class="twitter icon"></i>
+                <i className="twitter icon"></i>
               </button>
               <button className="ui circular linkedin icon button ">
                 <i className="linkedin icon"></i>
@@ -113,10 +113,10 @@ const About = () => {
           <div className="extra content">
             <div className="box-about">
               <button className="ui circular facebook icon button ">
-                <i class="facebook icon"></i>
+                <i className="facebook icon"></i>
               </button>
               <button className="ui circular twitter icon button ">
-                <i class="twitter icon"></i>
+                <i className="twitter icon"></i>
               </button>
               <button className="ui circular linkedin icon button ">
                 <i className="linkedin icon"></i>

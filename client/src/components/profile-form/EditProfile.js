@@ -1,7 +1,7 @@
 import React, { useState, Fragment, useEffect } from "react";
-import { Link, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
-import { Grid, Image } from "semantic-ui-react";
+import { Grid } from "semantic-ui-react";
 import { createProfile, getCurrentProfile } from "../../actions/profile";
 const EditProfile = ({
   profile: { profile, loading },

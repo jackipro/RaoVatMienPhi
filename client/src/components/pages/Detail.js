@@ -1,9 +1,9 @@
 import React, { Fragment, useEffect } from "react";
 import { connect } from "react-redux";
-import Moment from "react-moment";
+
 import Spinner from "../layout/Spinner";
 import { getSinglePost } from "../../actions/post";
-import MobileItem from "../pages/MobileItem";
+
 import MobileSingleItem from "./MobileSingleItem";
 const Detail = ({ getSinglePost, post: { post, loading }, match }) => {
   useEffect(() => {

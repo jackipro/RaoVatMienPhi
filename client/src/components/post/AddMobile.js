@@ -56,7 +56,7 @@ const AddMobile = ({ createPost }) => {
                 <div className="unstackable two fields">
                   <div className="field">
                     <label>
-                      <i class="file image icon"></i> Hình ảnh
+                      <i className="file image icon"></i> Hình ảnh
                     </label>
                     <div className="ui input">
                       <ReactFileReader
@@ -77,7 +77,7 @@ const AddMobile = ({ createPost }) => {
                   </div>
                   <div className="field">
                     <label>
-                      <i class="audio description icon"></i> Tiêu đề
+                      <i className="audio description icon"></i> Tiêu đề
                     </label>
                     <div className="ui input">
                       <input
@@ -93,7 +93,7 @@ const AddMobile = ({ createPost }) => {
                 <div className="two fields">
                   <div className="field">
                     <label>
-                      <i class="location arrow icon"></i> Địa Chỉ
+                      <i className="location arrow icon"></i> Địa Chỉ
                     </label>
                     <div className="ui input">
                       <input
@@ -107,7 +107,7 @@ const AddMobile = ({ createPost }) => {
                   </div>
                   <div className="field">
                     <label>
-                      <i class="phone icon"></i> Số điện thoại
+                      <i className="phone icon"></i> Số điện thoại
                     </label>
                     <div className="ui input">
                       <input
@@ -123,7 +123,7 @@ const AddMobile = ({ createPost }) => {
                 <div className="two fields">
                   <div className="field">
                     <label>
-                      <i class="dollar sign icon"></i> Giá tiền bạn muốn bán
+                      <i className="dollar sign icon"></i> Giá tiền bạn muốn bán
                     </label>
                     <div className="ui input">
                       <NumberFormat
@@ -138,7 +138,7 @@ const AddMobile = ({ createPost }) => {
                   </div>
                   <div className="field">
                     <label>
-                      <i class="pencil alternate icon"></i> Mô tả
+                      <i className="pencil alternate icon"></i> Mô tả
                     </label>
                     <div className="ui input">
                       <input
@@ -152,8 +152,8 @@ const AddMobile = ({ createPost }) => {
                   </div>
                   <div className="field">
                     <label>
-                      <i class="pencil alternate icon"></i> Link mạng xã hội để
-                      liên lạc
+                      <i className="pencil alternate icon"></i> Link mạng xã hội
+                      để liên lạc
                     </label>
                     <div className="ui input">
                       <input
@@ -171,7 +171,7 @@ const AddMobile = ({ createPost }) => {
                   Đăng bài
                 </button>
 
-                <Link to="/mobile" class="ui primary basic button">
+                <Link to="/mobile" className="ui primary basic button">
                   Chuyển đến trang rao vặt điện thoại
                 </Link>
               </form>

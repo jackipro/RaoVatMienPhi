@@ -12,37 +12,42 @@ const MobileItem = ({
 }) => {
   return (
     <Fragment>
-      <div class="ui items">
-        <div class="item">
-          <div class="ui small image">
-            <img src={img} />
+      <div className="ui items">
+        <div className="item">
+          <div className="ui small image">
+            <img src={img} alt="/" />
           </div>
 
-          <div class="middle aligned content">
-            <div class="header">
-              <h1 class="ui small header">{text}</h1>
+          <div className="middle aligned content">
+            <div className="header">
+              <h1 className="ui small header">{text}</h1>
             </div>
-            <div class="text" style={{ margin: "10px 0px" }}>
-              <i class="user circle icon"></i> Đăng bởi: <a> {name}</a>
+            <div className="text" style={{ margin: "10px 0px" }}>
+              <i className="user circle icon"></i> Đăng bởi:{" "}
+              <a href="!#"> {name}</a>
             </div>
-            <div class="date">
-              <i class="calendar alternate outline icon"></i>
+            <div className="date">
+              <i className="calendar alternate outline icon"></i>
               Đăng vào: <Moment format="DD/MM/YYYY">{date}</Moment>
             </div>
             <div
-              class="text"
+              className="text"
               style={{ color: "red", margin: "10px 0px", fontWeight: "bold" }}
             >
-              <i class="money bill alternate outline icon"></i> Giá bán: {price}
+              <i className="money bill alternate outline icon"></i> Giá bán:{" "}
+              {price}
               VND
             </div>
-            <Link to={`/mobile/${_id}`} class="ui mini primary basic button">
+            <Link
+              to={`/mobile/${_id}`}
+              className="ui mini primary basic button"
+            >
               Xem chi tiết
             </Link>
             {!auth.loading && user === auth.user._id && (
               <Link
                 onClick={e => deletePost(_id)}
-                class="ui mini red basic button"
+                className="ui mini red basic button"
               >
                 Xóa bài viết
               </Link>
@@ -50,7 +55,7 @@ const MobileItem = ({
           </div>
         </div>
       </div>
-      <div class="ui divider"></div>
+      <div className="ui divider"></div>
     </Fragment>
   );
 };

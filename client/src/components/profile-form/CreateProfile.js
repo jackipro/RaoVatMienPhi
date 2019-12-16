@@ -1,5 +1,5 @@
 import React, { useState, Fragment } from "react";
-import { Link, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { createProfile } from "../../actions/profile";
 import { Grid } from "semantic-ui-react";
