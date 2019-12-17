@@ -17,6 +17,9 @@ import Mobile from "./components/pages/Mobile";
 import AddPost from "./components/post/AddPost";
 import AddMobile from "./components/post/AddMobile";
 import Detail from "./components/pages/Detail";
+import BikeDetail from "./components/bike/BikeDetail";
+import AddBike from "./components/post/AddBike";
+import Bike from "./components/bike/Bike";
 //Redux
 import { Provider } from "react-redux";
 import { loadUser } from "./actions/auth";
@@ -46,6 +49,7 @@ const App = () => {
               <PrivateRoute exact path="/mobile" component={Mobile} />
               <PrivateRoute exact path="/mobile/:id" component={Detail} />
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
+              <PrivateRoute exact path="/bike/:id" component={BikeDetail} />
               <PrivateRoute
                 exact
                 path="/edit-profile"
@@ -58,6 +62,8 @@ const App = () => {
               />
               <PrivateRoute exact path="/addpost" component={AddPost} />
               <PrivateRoute exact path="/add-mobile" component={AddMobile} />
+              <PrivateRoute exact path="/add-bike" component={AddBike} />
+              <PrivateRoute exact path="/bike" component={Bike} />
             </Switch>
           </div>
           <Footer />

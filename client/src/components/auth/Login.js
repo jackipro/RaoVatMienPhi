@@ -38,7 +38,7 @@ const LoginForm = ({ login, isAuthenticated }) => {
       >
         <Grid.Column style={{ maxWidth: 450 }}>
           <Header as="h2" color="yellow" textAlign="center">
-            Log-in to your account
+            Đăng nhập
           </Header>
           <Form onSubmit={e => onSubmit(e)} size="large">
             <Segment stacked>
@@ -70,9 +70,9 @@ const LoginForm = ({ login, isAuthenticated }) => {
             </Segment>
           </Form>
           <Message>
-            New to us?{" "}
+            Bạn chưa có tại khoản?{" "}
             <Link to="/register" href="#">
-              Sign Up
+              Đăng ký
             </Link>
           </Message>
         </Grid.Column>

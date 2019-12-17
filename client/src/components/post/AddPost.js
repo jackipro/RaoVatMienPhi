@@ -5,6 +5,7 @@ const AddPost = () => {
   return (
     <Fragment>
       <div className="banner-quangcao15"></div>
+
       <div
         className="ui justified container"
         style={{
@@ -12,7 +13,7 @@ const AddPost = () => {
           textAlign: "center"
         }}
       >
-        <h1 class="ui header">Chọn danh mục đăng bài</h1>
+        <h1 class="ui header"> Chọn danh mục đăng bài</h1>
       </div>
 
       <div className="cot">
@@ -47,7 +48,7 @@ const AddPost = () => {
 
             <Grid.Column width={3}>
               <h3>Xe cộ</h3>
-              <Link to="/mobile">
+              <Link to="/add-bike">
                 <div className="bike-gif"></div>
               </Link>
               <h3>Tuyển Dụng</h3>
@@ -96,6 +97,10 @@ const AddPost = () => {
               <div className="banner-doc2"></div>
             </Grid.Column>
           </Grid.Row>
+          <Link to="/" className="ui secondary button">
+            <i className="arrow alternate circle left icon"></i>
+            Trở lại
+          </Link>
         </Grid>
       </div>
     </Fragment>

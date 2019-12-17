@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Grid, GridColumn, Input, Button } from "semantic-ui-react";
-import QuangCao from "../../img/quangcao12.png";
+import QuangCao from "../../img/mobilesinglebannergif.gif";
 import QuangCao7 from "../../img/quangcao7.png";
 import QuangCao8 from "../../img/quangcao8.jpg";
 export default function Homepage() {
@@ -92,7 +92,7 @@ export default function Homepage() {
 
             <Grid.Column width={3}>
               <h3>Xe cộ</h3>
-              <Link to="/mobile">
+              <Link to="/bike">
                 <div className="bike-gif"></div>
               </Link>
               <h3>Tuyển Dụng</h3>

@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <div>
-      <h1 className="ui header">
+      <h1 style={{ textAlign: "center" }} className="ui header">
         Các Thành Viên Trong Đội Ngũ Phát Triển Website
       </h1>
       <div className="box-about">
